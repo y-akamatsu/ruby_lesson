@@ -20,3 +20,20 @@ p name.empty? #返却値はtrue か false 今回はFalse
 
 p name.include?("N") #false なぜなら破壊されているから
 p name.include?("E")
+
+#pushメソッド
+animals = ["dog", "cat", "mous"]
+p animals
+animals.push("pig")
+p animals
+
+#ハッシュオブジェクトを創る (キーが文字列)
+scores_1 = {"endo"=>200,"takahasihi"=>400}
+
+#シンボル名で書く(動作が高速である)
+scores_2={:taguchi =>200,:watanabe => 150}
+
+#シンボル名は以下の様に短くできるし、読みやすい。
+scores_3={iida: 200,saeki: 320}
+p scores_1["endo"]
+p scores_3[:iida]
